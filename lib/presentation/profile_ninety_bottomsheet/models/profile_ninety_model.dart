@@ -1,0 +1,13 @@
+// ignore_for_file: must_be_immutable
+
+import 'package:equatable/equatable.dart';import '../../../core/app_export.dart';import 'userprofile8_item_model.dart';/// This class defines the variables used in the [profile_ninety_bottomsheet],
+/// and is typically used to hold data that is passed between different parts of the application.
+class ProfileNinetyModel extends Equatable {ProfileNinetyModel({this.userprofile8ItemList = const []}) {  }
+
+List<Userprofile8ItemModel> userprofile8ItemList;
+
+ProfileNinetyModel copyWith({List<Userprofile8ItemModel>? userprofile8ItemList}) { return ProfileNinetyModel(
+userprofile8ItemList : userprofile8ItemList ?? this.userprofile8ItemList,
+); } 
+@override List<Object?> get props => [userprofile8ItemList];
+ }
